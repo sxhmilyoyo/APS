@@ -1,5 +1,6 @@
 import csvcorpus
 import lda
+import os
 
 def get_topic(domain):
 	data_root = "/usa/haoxu/Workplace/InfoLab/DataMining/Final_Project/Final/Data/IEEE/"
@@ -16,7 +17,8 @@ def get_topic(domain):
 	print "Converting document..."
 	bow = l.convert_doc_bow(dictionary, abstracts)
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
 	domains = ["IR", "ML"]
 	for domain in domains:
+		print "Addressing domain: ", domain
 		get_topic(domain)
