@@ -1,5 +1,6 @@
 from gensim import corpora
 import os
+import json
 
 class LDA():
 	def __init__(self, data_domian):
@@ -11,16 +12,23 @@ class LDA():
 		for corpora, term in corpus_raw:
 			abstracts.append(corpora["Abstract"])
 			terms.append(term)
+		with open(os.path.join(self.data_path, self.data_domian, "abstracts.json"), "w") as fp:
+			json.dump(abstracts, fp, indent=4)
+		print "abstracts.json has been saved."
+		with open(os.path.join(self.data_path, self.data_domian, "terms.json"), "w") as fp:
+			json.dump(terms, fp, indent=4)
+		print "terms.json has been saved."
 		return abstracts, terms
 
 	def build_dict(self, corpus_abstract):
 		dictionary = corpora.Dictionary(corpus_abstract)
-		dictionary.save(os.path.join(slef.data_path, self.data_domian, self.data_domian.lower()+".dict"))
-		print dictionary
-		print dictionary.token2id
+		dictionary.save(os.path.join(self.data_path, self.data_domian, self.data_domian.lower()+".dict"))
+		print self.data_domian.lower()+".dict has been saved."
+		# print dictionary.token2id
 		return dictionary
 
-	def convert_doc_bow(self, corpus_abstract):
+	def convert_doc_bow(self, dictionary, corpus_abstract):
 		corpus_abstract_bow = [dictionary.doc2bow(corpora_abstract) for corpora_abstract in corpus_abstract]
-		corpora.MmCorpus.serialize(os.path.join(self.data_path, self.data_domian, self.data_domian.lower()+".mm", corpus_abstract_bow))
+		corpora.MmCorpus.serialize(os.path.join(self.data_path, self.data_domian, self.data_domian.lower()+".mm"), corpus_abstract_bow)
+		print self.data_domian.lower()+".mm has been saved."
 		return corpus_abstract_bow
