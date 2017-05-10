@@ -5,6 +5,7 @@ import csv
 import itertools
 import nltk
 import re
+import xlrd
 
 from gensim import interfaces, utils
 from collections import defaultdict
@@ -35,58 +36,86 @@ class CsvCorpus(interfaces.CorpusABC):
         self.abstract = ["Abstract"]
         self.terms = ["Author Keywords", "IEEE Terms", "INSPEC Controlled Terms"]
         # load the first few lines, to guess the CSV dialect
-        head = ''.join(itertools.islice(utils.smart_open(self.fname), 5))
-        self.headers = csv.Sniffer().has_header(head)
-        self.dialect = csv.Sniffer().sniff(head)
-        logger.info("sniffed CSV delimiter=%r, headers=%s" % (self.dialect.delimiter, self.headers))
+        # head = ''.join(itertools.islice(utils.smart_open(self.fname), 5))
+        # self.headers = csv.Sniffer().has_header(head)
+        # self.dialect = csv.Sniffer().sniff(head)
+        # logger.info("sniffed CSV delimiter=%r, headers=%s" % (self.dialect.delimiter, self.headers))
 
     def __iter__(self):
         """
         Iterate over the corpus, returning one sparse vector at a time.
         """
-        reader = csv.reader(utils.smart_open(self.fname), self.dialect)
+        # reader = csv.reader(utils.smart_open(self.fname), self.dialect)
         # if self.headers:
         #     next(reader)    # skip the headers
-
-        line_no = -1
+        reader = self.load_excel()
+        # line_no = -1
         for line_no, line in enumerate(reader):
-            # if self.labels:
-            #     line.pop(0)  # ignore the first column = class label
+            if self.labels:
+                line.pop(0)  # ignore the first column = class label
             if line_no != 0:
-                for label in self.abstract:
-                    abstract_id = self.label2id[label]
-                    abstract_tokens = self.tokenizer_absr(line[abstract_id])
+                for label_abs in self.abstract:
+                    abstract_id = self.label2id[label_abs]
+                    try:
+                        abstract_tokens = self.tokenizer_absr(line[abstract_id])
+                    except:
+                        print "abstract", line[0]
+                        break
                     abstract_tokens_no_sw = self.rm_sw(abstract_tokens)
-                    abstract_corpora = self.stemmer(abstract_tokens_no_sw)
+                    try:
+                        abstract_corpora = self.stemmer(abstract_tokens_no_sw)
+                    except:
+                        print "abstract stem", line[0]
+                        break
                     line[abstract_id] = map(lambda x: x.lower(), abstract_corpora)
 
                 terms_dict = defaultdict(str)
-                for label in self.terms:
-                    term_id = self.label2id[label]
-                    term_tokens = self.tokenizer_terms(line[term_id])
+                for label_term in self.terms:
+                    term_id = self.label2id[label_term]
+                    try:
+                        term_tokens = self.tokenizer_terms(line[term_id])
+                    except:
+                        print "terms", line[0]
+                        break
                     term_corpora = []
                     # build term dict: map stemmed version to original version for all term lists
-                    terms_dict[label] = defaultdict(str)
+                    terms_dict[label_term] = defaultdict(str)
                     for t in term_tokens:
-                        term_corpora_tmp = ' '.join(self.stemmer(t))
+                        try:
+                            term_corpora_tmp = ' '.join(self.stemmer(t))
+                        except:
+                            print "term stem", line[0]
+                            break
                         term_corpora.append(term_corpora_tmp)
                         # build term dict: map stemmed version to original version for each term list
-                        terms_dict[label][term_corpora_tmp] = ' '.join(t)
+                        terms_dict[label_term][term_corpora_tmp] = ' '.join(t)
                     line[term_id] = map(lambda x: x.lower(), term_corpora)
                 
                 result_d = defaultdict(str)
                 tmp_d = dict(enumerate(line))
+                # print tmp_d
                 for k in tmp_d:
                     result_d[self.id2label[k]] = tmp_d[k]
-
                 yield result_d, terms_dict
 
-        self.length = line_no + 1  # store the total number of CSV rows = documents
+        # self.length = line_no + 1  # store the total number of CSV rows = documents
+
+    def load_excel(self):
+        result = []
+        workbook = xlrd.open_workbook(self.fname)
+        worksheet = workbook.sheet_by_index(0)
+        for r in range(worksheet.nrows):
+            if worksheet.row(r)[0].value:
+                tmp = [cell.value for cell in worksheet.row(r)]
+                result.append(tmp[:29])
+        return result
 
     def tokenizer_absr(self, text):
+        # print text
         return re.findall("\w+", text)
 
     def tokenizer_terms(self, text):
+        # print text
         terms = text.split(";")
         return [self.tokenizer_absr(t) for t in terms]
 
