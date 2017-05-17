@@ -1,0 +1,60 @@
+Document structure
+Document topic models
+Content analysis and feature selection
+Data encoding and canonicalization
+Document collection models
+Ontologies
+Dictionaries
+Thesauri
+Query representation
+Query intent
+Query log analysis
+Query suggestion
+Query reformulation
+Personalization
+Task models
+Search interfaces
+Collaborative search
+Rank aggregation
+Probabilistic retrieval models
+Language models
+Similarity measures
+Learning to rank
+Combination, fusion and federated search
+Information retrieval diversity
+Top-k retrieval in databases
+Novelty in information retrieval
+Question answering
+Document filtering
+Recommender systems
+Information extraction
+Sentiment analysis
+Expert search
+Near-duplicate and plagiarism detection
+Clustering and classification
+Summarization
+Business intelligence
+Test collections
+Relevance assessment
+Retrieval effectiveness
+Retrieval efficiency
+Presentation of retrieval results
+Search engine indexing
+Search index compression
+Distributed retrieval
+Peer-to-peer retrieval
+Retrieval on mobile devices
+Adversarial retrieval
+Link and co-citation analysis
+Searching with auxiliary databases
+Structured text search
+Mathematics retrieval
+Chemical and biochemical retrieval
+Multilingual and cross-lingual retrieval
+Image search
+Video search
+Speech audio search
+Music retrieval
+Enterprise search
+Desktop search
+Web and social media search

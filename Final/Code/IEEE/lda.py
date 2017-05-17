@@ -8,17 +8,26 @@ class LDA():
 		self.data_domian = data_domian
 
 	def load_corpus(self, corpus_raw):
-		abstracts, terms = [], []
+		abstracts, titles, links, terms = [], [], [], []
 		for corpora, term in corpus_raw:
-			abstracts.append(corpora["Abstract"])
-			terms.append(term)
-		with open(os.path.join(self.data_path, self.data_domian, "abstracts.json"), "w") as fp:
-			json.dump(abstracts, fp, indent=4)
-		print "abstracts.json has been saved."
-		with open(os.path.join(self.data_path, self.data_domian, "terms.json"), "w") as fp:
-			json.dump(terms, fp, indent=4)
-		print "terms.json has been saved."
-		return abstracts, terms
+			# abstracts.append(corpora["Abstract"])
+			titles.append(corpora["Document Title"])
+			links.append(corpora["PDF Link"])
+			# terms.append(term)
+		# with open(os.path.join(self.data_path, self.data_domian, "abstracts.json"), "w") as fp:
+		# 	json.dump(abstracts, fp, indent=4)
+		# print "abstracts.json has been saved."
+		with open(os.path.join(self.data_path, self.data_domian, "titles.json"), "w") as fp:
+			json.dump(titles, fp, indent=4)
+		print "titles.json has been saved."
+		with open(os.path.join(self.data_path, self.data_domian, "links.json"), "w") as fp:
+			json.dump(links, fp, indent=4)
+		print "links.json has been saved."
+		# with open(os.path.join(self.data_path, self.data_domian, "terms.json"), "w") as fp:
+		# 	json.dump(terms, fp, indent=4)
+		# print "terms.json has been saved."
+		# return abstracts, titles, links, terms
+		return titles, links
 
 	def build_dict(self, corpus_abstract):
 		dictionary = corpora.Dictionary(corpus_abstract)
