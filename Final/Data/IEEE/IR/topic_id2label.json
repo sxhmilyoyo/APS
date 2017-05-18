@@ -1,0 +1,302 @@
+{
+    "30": [
+        "speech recognit", 
+        "latent dirichlet", 
+        "dirichlet alloc"
+    ], 
+    "28": [
+        "fine grain", 
+        "key frame", 
+        "name entiti"
+    ], 
+    "29": [
+        "data sourc", 
+        "big data", 
+        "data mine"
+    ], 
+    "53": [
+        "br br", 
+        "sing voic", 
+        "hidden markov"
+    ], 
+    "52": [
+        "similar measur", 
+        "euclidean distanc", 
+        "distanc measur"
+    ], 
+    "23": [
+        "xml document", 
+        "top k", 
+        "keyword search"
+    ], 
+    "24": [
+        "visual featur", 
+        "semant gap", 
+        "p p"
+    ], 
+    "25": [
+        "domain ontolog", 
+        "semant web", 
+        "domain specif"
+    ], 
+    "26": [
+        "hash tabl", 
+        "high resolut", 
+        "nearest neighbor"
+    ], 
+    "27": [
+        "water vapor", 
+        "radi transfer", 
+        "land surfac"
+    ], 
+    "20": [
+        "key frame", 
+        "spatio tempor", 
+        "level featur"
+    ], 
+    "21": [
+        "simul result", 
+        "sensor network", 
+        "sub sub"
+    ], 
+    "22": [
+        "relev document", 
+        "p p", 
+        "xml document"
+    ], 
+    "49": [
+        "sup sup", 
+        "sub sub", 
+        "water vapor"
+    ], 
+    "46": [
+        "semi supervis", 
+        "p p", 
+        "f measur"
+    ], 
+    "47": [
+        "e learn", 
+        "p p", 
+        "br br"
+    ], 
+    "44": [
+        "latent dirichlet", 
+        "dirichlet alloc", 
+        "p p"
+    ], 
+    "45": [
+        "img class", 
+        "ab contain", 
+        "class img"
+    ], 
+    "42": [
+        "p p", 
+        "case studi", 
+        "decis make"
+    ], 
+    "43": [
+        "cloud comput", 
+        "keyword search", 
+        "fine grain"
+    ], 
+    "40": [
+        "peer peer", 
+        "hash tabl", 
+        "fault toler"
+    ], 
+    "41": [
+        "et al", 
+        "sub sub", 
+        "bug report"
+    ], 
+    "1": [
+        "web site", 
+        "social network", 
+        "web page"
+    ], 
+    "0": [
+        "cloud comput", 
+        "web servic", 
+        "fault toler"
+    ], 
+    "3": [
+        "question answer", 
+        "stack overflow", 
+        "natur languag"
+    ], 
+    "2": [
+        "cloud comput", 
+        "fine grain", 
+        "radi transfer"
+    ], 
+    "5": [
+        "sourc code", 
+        "bug report", 
+        "open sourc"
+    ], 
+    "4": [
+        "mobil devic", 
+        "mobil phone", 
+        "cloud comput"
+    ], 
+    "7": [
+        "cluster algorithm", 
+        "p p", 
+        "k mean"
+    ], 
+    "6": [
+        "high resolut", 
+        "water vapor", 
+        "land surfac"
+    ], 
+    "9": [
+        "high dimension", 
+        "dimension reduct", 
+        "nearest neighbor"
+    ], 
+    "8": [
+        "apertur radar", 
+        "synthet apertur", 
+        "wind speed"
+    ], 
+    "18": [
+        "domain ontolog", 
+        "knowledg base", 
+        "p p"
+    ], 
+    "13": [
+        "stack overflow", 
+        "question answer", 
+        "water vapor"
+    ], 
+    "12": [
+        "associ rule", 
+        "social media", 
+        "data mine"
+    ], 
+    "59": [
+        "p p", 
+        "mobil agent", 
+        "multi agent"
+    ], 
+    "32": [
+        "medic imag", 
+        "decis make", 
+        "big data"
+    ], 
+    "14": [
+        "audio signal", 
+        "sing voic", 
+        "key frame"
+    ], 
+    "11": [
+        "social media", 
+        "social network", 
+        "dirichlet alloc"
+    ], 
+    "10": [
+        "audio signal", 
+        "sing voic", 
+        "gaussian mixtur"
+    ], 
+    "39": [
+        "mobil agent", 
+        "mobil devic", 
+        "mobil phone"
+    ], 
+    "38": [
+        "bright temperatur", 
+        "wind speed", 
+        "surfac temperatur"
+    ], 
+    "15": [
+        "speech recognit", 
+        "languag model", 
+        "n gram"
+    ], 
+    "58": [
+        "bug report", 
+        "sourc code", 
+        "open sourc"
+    ], 
+    "17": [
+        "averag precis", 
+        "sub sub", 
+        "p p"
+    ], 
+    "16": [
+        "land surfac", 
+        "soil moistur", 
+        "surfac temperatur"
+    ], 
+    "19": [
+        "invert index", 
+        "sup sup", 
+        "high dimension"
+    ], 
+    "54": [
+        "user profil", 
+        "p p", 
+        "user interest"
+    ], 
+    "31": [
+        "user queri", 
+        "queri expans", 
+        "p p"
+    ], 
+    "56": [
+        "machin translat", 
+        "name entiti", 
+        "cross languag"
+    ], 
+    "51": [
+        "semant similar", 
+        "bag word", 
+        "latent semant"
+    ], 
+    "36": [
+        "vector machin", 
+        "support vector", 
+        "machin svm"
+    ], 
+    "35": [
+        "spatio tempor", 
+        "princip compon", 
+        "featur extract"
+    ], 
+    "34": [
+        "color textur", 
+        "textur featur", 
+        "base imag"
+    ], 
+    "33": [
+        "p p", 
+        "radi transfer", 
+        "surfac temperatur"
+    ], 
+    "55": [
+        "cultur heritag", 
+        "digit librari", 
+        "full text"
+    ], 
+    "37": [
+        "web page", 
+        "web search", 
+        "wide web"
+    ], 
+    "48": [
+        "sub sub", 
+        "radi transfer", 
+        "bright temperatur"
+    ], 
+    "57": [
+        "simul result", 
+        "sup sup", 
+        "fine grain"
+    ], 
+    "50": [
+        "p p", 
+        "social network", 
+        "social media"
+    ]
+}

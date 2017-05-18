@@ -1,0 +1,412 @@
+{
+    "56": [
+        "p p", 
+        "comput vision", 
+        "pre process"
+    ], 
+    "54": [
+        "fault diagnosi", 
+        "fault toler", 
+        "bp neural"
+    ], 
+    "28": [
+        "p p", 
+        "e g", 
+        "remot sens"
+    ], 
+    "48": [
+        "sentiment analysi", 
+        "n gram", 
+        "natur languag"
+    ], 
+    "29": [
+        "face recognit", 
+        "publicli avail", 
+        "proceed record"
+    ], 
+    "60": [
+        "comput vision", 
+        "remot sens", 
+        "face recognit"
+    ], 
+    "61": [
+        "low level", 
+        "magnet reson", 
+        "comput vision"
+    ], 
+    "62": [
+        "predict model", 
+        "predict accuraci", 
+        "linear regress"
+    ], 
+    "63": [
+        "time seri", 
+        "spatio tempor", 
+        "short term"
+    ], 
+    "64": [
+        "posit neg", 
+        "social media", 
+        "ground truth"
+    ], 
+    "65": [
+        "featur select", 
+        "classif accuraci", 
+        "featur vector"
+    ], 
+    "66": [
+        "machin svm", 
+        "ls svm", 
+        "vector machin"
+    ], 
+    "67": [
+        "optim problem", 
+        "np hard", 
+        "decis maker"
+    ], 
+    "68": [
+        "p p", 
+        "knowledg discoveri", 
+        "big data"
+    ], 
+    "69": [
+        "kernel function", 
+        "ls svm", 
+        "maximum likelihood"
+    ], 
+    "80": [
+        "gene express", 
+        "amino acid", 
+        "breast cancer"
+    ], 
+    "81": [
+        "cluster algorithm", 
+        "k mean", 
+        "self organ"
+    ], 
+    "53": [
+        "pid control", 
+        "web page", 
+        "non neg"
+    ], 
+    "24": [
+        "fuzzi rule", 
+        "rule base", 
+        "membership function"
+    ], 
+    "25": [
+        "web servic", 
+        "big data", 
+        "mobil devic"
+    ], 
+    "26": [
+        "fals posit", 
+        "posit neg", 
+        "non neg"
+    ], 
+    "27": [
+        "speech recognit", 
+        "low level", 
+        "facial express"
+    ], 
+    "20": [
+        "chapter contain", 
+        "section titl", 
+        "contain section"
+    ], 
+    "21": [
+        "l sub", 
+        "sub sub", 
+        "sup sup"
+    ], 
+    "22": [
+        "comput vision", 
+        "facial express", 
+        "ground truth"
+    ], 
+    "49": [
+        "attribut reduct", 
+        "set theori", 
+        "rough set"
+    ], 
+    "46": [
+        "social network", 
+        "semi supervis", 
+        "cluster algorithm"
+    ], 
+    "23": [
+        "comput vision", 
+        "facial express", 
+        "face recognit"
+    ], 
+    "44": [
+        "sentiment analysi", 
+        "social media", 
+        "posit neg"
+    ], 
+    "45": [
+        "p p", 
+        "big data", 
+        "data driven"
+    ], 
+    "42": [
+        "concept lattic", 
+        "knowledg discoveri", 
+        "inform retriev"
+    ], 
+    "43": [
+        "maximum likelihood", 
+        "h sub", 
+        "markov chain"
+    ], 
+    "40": [
+        "decis make", 
+        "logist regress", 
+        "decis maker"
+    ], 
+    "41": [
+        "wavelet transform", 
+        "current committe", 
+        "short term"
+    ], 
+    "1": [
+        "p p", 
+        "mobil devic", 
+        "multi agent"
+    ], 
+    "0": [
+        "amino acid", 
+        "remot sens", 
+        "gene express"
+    ], 
+    "3": [
+        "dimension reduct", 
+        "analysi pca", 
+        "princip compon"
+    ], 
+    "2": [
+        "decis tree", 
+        "random forest", 
+        "naiv bay"
+    ], 
+    "5": [
+        "magnet reson", 
+        "licens plate", 
+        "comput vision"
+    ], 
+    "4": [
+        "p p", 
+        "search engin", 
+        "np hard"
+    ], 
+    "7": [
+        "reinforc learn", 
+        "pid control", 
+        "slide mode"
+    ], 
+    "6": [
+        "time delay", 
+        "time vari", 
+        "pid control"
+    ], 
+    "9": [
+        "maximum likelihood", 
+        "least squar", 
+        "singl hidden"
+    ], 
+    "8": [
+        "low level", 
+        "ground truth", 
+        "publicli avail"
+    ], 
+    "52": [
+        "power consumpt", 
+        "fault toler", 
+        "energi consumpt"
+    ], 
+    "13": [
+        "search engin", 
+        "web page", 
+        "recommend system"
+    ], 
+    "77": [
+        "question answer", 
+        "n gram", 
+        "natur languag"
+    ], 
+    "76": [
+        "multilay perceptron", 
+        "energi consumpt", 
+        "k mean"
+    ], 
+    "75": [
+        "p p", 
+        "real life", 
+        "reinforc learn"
+    ], 
+    "12": [
+        "face recognit", 
+        "facial express", 
+        "linear discrimin"
+    ], 
+    "73": [
+        "short term", 
+        "power consumpt", 
+        "energi consumpt"
+    ], 
+    "72": [
+        "social media", 
+        "social network", 
+        "sentiment analysi"
+    ], 
+    "71": [
+        "l sub", 
+        "amino acid", 
+        "sub sub"
+    ], 
+    "70": [
+        "squar error", 
+        "mean squar", 
+        "error rate"
+    ], 
+    "59": [
+        "intrus detect", 
+        "anomali detect", 
+        "learn ml"
+    ], 
+    "47": [
+        "kalman filter", 
+        "fals posit", 
+        "mobil robot"
+    ], 
+    "79": [
+        "fals alarm", 
+        "hidden markov", 
+        "analysi pca"
+    ], 
+    "78": [
+        "genet algorithm", 
+        "particl swarm", 
+        "swarm optim"
+    ], 
+    "11": [
+        "intrus detect", 
+        "anomali detect", 
+        "fals posit"
+    ], 
+    "10": [
+        "control system", 
+        "pid control", 
+        "slide mode"
+    ], 
+    "39": [
+        "similar measur", 
+        "k nn", 
+        "nearest neighbor"
+    ], 
+    "38": [
+        "multi class", 
+        "classif problem", 
+        "train sampl"
+    ], 
+    "15": [
+        "k nearest", 
+        "nearest neighbor", 
+        "k nn"
+    ], 
+    "58": [
+        "back propag", 
+        "singl hidden", 
+        "hidden layer"
+    ], 
+    "14": [
+        "breast cancer", 
+        "magnet reson", 
+        "gene express"
+    ], 
+    "16": [
+        "pid control", 
+        "feed forward", 
+        "control system"
+    ], 
+    "19": [
+        "mobil devic", 
+        "kalman filter", 
+        "wireless sensor"
+    ], 
+    "32": [
+        "br br", 
+        "social media", 
+        "social network"
+    ], 
+    "31": [
+        "open sourc", 
+        "predict model", 
+        "learn ml"
+    ], 
+    "30": [
+        "facial express", 
+        "speech recognit", 
+        "hidden markov"
+    ], 
+    "51": [
+        "featur extract", 
+        "featur vector", 
+        "magnet reson"
+    ], 
+    "36": [
+        "speech recognit", 
+        "n gram", 
+        "markov model"
+    ], 
+    "35": [
+        "kalman filter", 
+        "non stationari", 
+        "real time"
+    ], 
+    "34": [
+        "power consumpt", 
+        "multi agent", 
+        "web servic"
+    ], 
+    "33": [
+        "inequ lmi", 
+        "matrix inequ", 
+        "close loop"
+    ], 
+    "55": [
+        "bayesian network", 
+        "markov chain", 
+        "p p"
+    ], 
+    "74": [
+        "br br", 
+        "mobil devic", 
+        "petri net"
+    ], 
+    "37": [
+        "kalman filter", 
+        "fault toler", 
+        "mobil devic"
+    ], 
+    "18": [
+        "natur languag", 
+        "question answer", 
+        "n gram"
+    ], 
+    "17": [
+        "magnet reson", 
+        "p p", 
+        "linear discrimin"
+    ], 
+    "57": [
+        "mobil robot", 
+        "p p", 
+        "reinforc learn"
+    ], 
+    "50": [
+        "remot sens", 
+        "ground truth", 
+        "spatio tempor"
+    ]
+}
